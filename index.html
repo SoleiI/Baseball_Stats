@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PLAYERS STATS</title>
+</head>
+<body>
+  <nav>
+    <div class="ps__nav1">
+      <div class="ps__logo">
+        PLAYERS STATS
+      </div>
+      <ul class="ps__menu">
+        <li><a href="pitching.php" target="ps__iframe">PITCHING</a></li>
+        <li><a href="batting.php" target="ps__iframe">BATTING</a></li>
+        <li><a href="defense.php" target="ps__iframe">DEFENSE</a></li>
+        <li><a href="more.html" target="ps__iframe">MORE</a></li>
+      </ul>
+      <div class="ps__search">
+        <form action="search.php" method="post" target="ps__iframe">
+          <input type="text" name="p_name" class="ps__text">
+          <button type="submit" class="btn__submit">
+            <img src="search.svg" alt="검색">
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="ps__nav2"></div>
+  </nav>
+  <main>
+    <iframe name="ps__iframe" frameborder="0"></iframe>
+  </main>
+</body>
+</html>
+

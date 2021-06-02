@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More</title>
+</head>
+<body>
+  <div class="update">
+    <h3>UPDATE SALARY</h3>
+    <form action="update.php" method="post">
+      <b>이름</b> <input type="text" name="update__name" id="update__name">
+      <br><br>
+      <b>연봉</b>
+      <input type="text" name="update__salary" id="update__salary"> 만원
+      <br><br>
+      <input type="submit" value="UPDATE">
+    </form>
+  </div>
+  <br><br><hr><br><br>
+  <div class="insert">
+    <h3>INSERT STATS</h3>
+    <form action="insert.php" method="post">
+      <b>이름</b> <input type="text" name="insert__name">
+      <br>
+      <b>등번호</b> <input type="text" name="insert__no">
+      <br><br>
+      <h4>기본 정보</h4>
+      WAR <input type="text" name="insert__basic1" style="width:100px;">
+      <br>
+      출생연도 <input type="text" name="insert__basic2" style="width:100px;"> 년
+      <br>
+      1군 출장 시즌 <input type="text" name="insert__basic3" style="width:100px;">
+      <br>
+      연봉 <input type="text" name="insert__basic4" style="width:100px;"> 만원
+      <br><br>
+      <h4>세부 스탯</h4>
+      <p>&lt;Guide&gt;</p>
+      <p>투구 : ERA, WHIP, 경기, 이닝, 선발 출전 순으로 기입<br>
+      타격 : 타수, 타율, 출루율, 장타율, wRC+ 순으로 기입<br>
+      수비 : 포지션, 실책, 이닝, 도루 저지율, WAA 순으로 기입</p>
+      <b>추가 항목 </b>
+      투구 <input type="radio" name="insert__stat" value="pitching" checked>
+      타격 <input type="radio" name="insert__stat" value="hitting">
+      <br>
+      <input type="text" name="insert__detail1" style="width:100px;">
+      <input type="text" name="insert__detail2" style="width:100px;">
+      <input type="text" name="insert__detail3" style="width:100px;">
+      <input type="text" name="insert__detail4" style="width:100px;">
+      <input type="text" name="insert__detail5" style="width:100px;">
+      <br><br>
+      수비<br>
+      <input type="text" name="insert__defense1" style="width:100px;">
+      <input type="text" name="insert__defense2" style="width:100px;">
+      <input type="text" name="insert__defense3" style="width:100px;">
+      <input type="text" name="insert__defense4" style="width:100px;">
+      <input type="text" name="insert__defense5" style="width:100px;">
+      <br><br>
+      <input type="submit" value="INSERT">
+    </form>
+  </div>
+  <br><br><hr><br><br>
+  <div class="drop">
+    <h3>DELETE STATS</h3>
+    <form action="delete.php" method="post">
+      선수명 <input type="text" name="drop__name" id="drop__name">
+      <br><br>
+      <input type="submit" value="DELETE">
+    </form>
+  </div>  
+</body>
+</html>
+

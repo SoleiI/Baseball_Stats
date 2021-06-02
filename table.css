@@ -1,0 +1,17 @@
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  width: 80px;
+  table-layout: fixed;
+  cursor: pointer;
+}
+
+th.no {
+  width: 30px;
+}
